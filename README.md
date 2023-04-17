@@ -1,2 +1,2 @@
 ## my_site
-- DMM Web Campのチャレンジカリキュラムです。
+- DMM Web Campのhtml/cssのチャレンジカリキュラムです。
