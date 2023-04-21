@@ -1,6 +1,6 @@
 /*global $*/
 $(function(){
-  $('#hamburger, .nav-list').on('click',function(event){
+  $('#hamburger, .list-item').on('click',function(event){
     $('.icon').toggleClass('close');
     $('.sm').slideToggle();
   });
