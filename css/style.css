@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*setting*/
 
 * {
@@ -46,8 +48,13 @@ header {
   font-size: 16px;
 }
 
-.nav-list a {
-  color: #FAFAFA;
+.nav-list a{
+	color: #FAFAFA;
+}
+
+
+.sm {
+  display: none;
 }
 
 /*MainVisual*/
@@ -298,51 +305,85 @@ footer {
   /*header*/
 
   header {
-    height: 50px;
+    height: 60px;
+    position: fixed;
   }
 
   .logo {
     height: 50px;
   }
 
-  .menu-box {
-    width: 40px;
-    height: 40px;
-    margin-right: 5%;
-    border: 1px solid #FAFAFA;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: auto;
+  #hamburger {
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
   }
 
-  .list-bar {
-    display: block;
-    width: 25px;
-    height: 2px;
-    margin: 5px auto;
-    background-color: #FAFAFA;
+  .icon span {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 8px;
+    transition: ease 0.75s;
   }
 
-  .list-bar:first-child {
-    margin-top: 10px;
+  .icon span:nth-of-type(1) {
+    top: 16px;
+  }
+  .icon span:nth-of-type(2) {
+    top: 28px;
+  }
+  .icon span:nth-of-type(3) {
+    bottom: 16px;
   }
 
-  .nav-list {
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 28px;
+  }
+
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3) {
+      transform: rotate(-45deg);
+      top: 28px;
+  }
+
+  .pc {
     display: none;
+  }
+
+  .sm {
+    top: 60px;
+    left: 0px;
+    position: absolute;
+    z-index: 10;
     width: 100%;
-    line-height: 50px;
-    border-bottom: 1px solid gray;
-    text-align: center;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(34, 49, 52, 0.9);
+  }
+
+  ul {
+    flex-direction: column;
   }
 
   .nav-list {
-    border: none;
+    width: 100%;
   }
 
-  .nav-list:last-child {
-    border: none;
-  }
+  .nav-list a {
+  color: #FAFAFA;
+  display: block;
+  line-height: 60px;
+  text-align: center;
+  border-top: solid 0.5px rgba(255, 255, 255, 0.6);
+}
 
   /*MainVisual*/
 

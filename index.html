@@ -15,12 +15,24 @@
     <header>
       <div class="container header-group">
         <a href="#mv"><img src="img/logo.png" alt="ロゴ" class="logo"></a>
-        <div class="menu-box">
-          <span class="list-bar"></span>
-          <span class="list-bar"></span>
-          <span class="list-bar"></span>
+        <div id="hamburger">
+          <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
         </div>
-        <nav>
+<!--レスポンシブメニュー-->
+        <nav class="sm">
+          <ul>
+            <li class="nav-list"><a href="#portfolio" class="list-item">Portfolio</a></li>
+            <li class="nav-list"><a href="#feature" class="list-item">Feature</a></li>
+            <li class="nav-list"><a href="#profile" class="list-item">Profile</a></li>
+            <li class="nav-list"><a href="#contact" class="list-item">Contact</a></li>
+          </ul>
+        </nav>
+<!--通常メニュー-->
+        <nav class="pc">
           <ul class="nav">
             <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
             <li class="nav-list"><a href="#feature">Feature</a></li>
@@ -153,5 +165,7 @@
       <p class="copyright">©︎ 2017 WebCamp</p>
     </footer>
     <script src="https://use.fontawesome.com/2fd86bc506.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
